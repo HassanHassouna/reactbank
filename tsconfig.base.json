@@ -8,13 +8,18 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "target": "es2015",
     "module": "esnext",
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@constants": ["apps/client/src/constants/index.tsx"],
+      "@types" : ["apps/client/src/types/types.ts"],
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
